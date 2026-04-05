@@ -285,6 +285,4 @@ The Ant Colony Foraging Optimizer successfully demonstrates the relative merits 
 
 ---
 
-**[End of Report]**
-
 *All code, trained models, and training curves are available in the attached GitHub repository and local `models/` directory.*

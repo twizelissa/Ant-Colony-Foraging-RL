@@ -4,6 +4,7 @@ import numpy as np
 import pygame
 import random
 import math
+import json
 
 class AntFarmEnv(gym.Env):
     metadata = {"render_modes": ["human", "rgb_array"], "render_fps": 60}
@@ -36,6 +37,7 @@ class AntFarmEnv(gym.Env):
         self.ant_speed = 5.0
         self.num_ants = 40
         self.decay_rate = 0.99
+        self.export_api = True
     
     def reset(self, seed=None, options=None):
         super().reset(seed=seed)
@@ -118,6 +120,20 @@ class AntFarmEnv(gym.Env):
                     
         # Terminal condition
         done = self.current_step >= self.max_steps or np.sum(self.food_remaining) <= 0
+        
+        if getattr(self, 'export_api', False):
+            state_data = {
+                "step": self.current_step,
+                "food": self.food_remaining.tolist(),
+                "pheromones": self.pheromones.tolist(),
+                "ants": [{"path": int(a["path"]), "progress": float(a["progress"]), "has_food": bool(a["has_food"])} for a in self.ants],
+                "collected": int(self.total_collected)
+            }
+            try:
+                with open("env_api_stream.json", "w") as f:
+                    json.dump(state_data, f)
+            except Exception:
+                pass
         
         if self.render_mode == "human":
             self.render()

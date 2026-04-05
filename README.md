@@ -2,6 +2,10 @@
 
 This repository contains an RL solution designed to manage a simulated ant colony foraging environment.
 
+**Video Demonstration:** [Watch the trained agent in action](https://www.bugufi.link/0gSh2k)
+
+**Full Report:** [Summative Report](Summative_Report_Final.pdf)
+
 ## 🐜 Mission Description 
 The agent manages an ant colony by controlling the pheromone levels along different foraging trails. The **objective** is to bring the maximum amount of food back to the nest efficiently.
 

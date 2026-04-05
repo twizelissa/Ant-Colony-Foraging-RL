@@ -2,9 +2,9 @@
 
 **Student Name:** Elissa Twizeyimana
 
-**Video Recording:** [Link to your video recording - 3 minutes max, camera on, screen share]
+**Video Recording:** [Watch Project Demo](https://www.bugufi.link/0gSh2k) - 3 minutes, camera on, full screen recording
 
-**GitHub Repository:** [Link to your GitHub repository]
+**GitHub Repository:** [Ant-Colony-Foraging-RL](https://github.com/twizelissa/Ant-Colony-Foraging-RL)
 
 ---
 

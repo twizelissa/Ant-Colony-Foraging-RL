@@ -6,12 +6,14 @@ This repository contains an RL solution designed to manage a simulated ant colon
 
 **Full Report:** [Summative Report](Summative_Report_Final.pdf)
 
-## 🐜 Mission Description 
-The agent manages an ant colony by controlling the pheromone levels along different foraging trails. The **objective** is to bring the maximum amount of food back to the nest efficiently.
+## 🐜 Mission Description (Capstone Context)
+This environment serves as a foundational simulation for a potential capstone project focusing on **Swarm Robotics & Autonomous Logistics Routing**. 
 
-- **State Space**: Normalized food levels remaining, current pheromone intensities along paths, distance values, and normalized time remaining.
-- **Action Space**: Discrete actions to boost pheromones on the trails leading to the 3 food sources, or do nothing.
-- **Rewards**: +1 for food collected, with minor energy penalties applied when wasting resources on dropping unnecessary pheromones.
+Disguised as a biological ant colony, the environment fundamentally models a multi-agent resource-routing problem. The RL agent manages the decentralized swarm by controlling navigational waypoints (pheromone levels) along different transit trails. The **objective** is to bring the maximum amount of resources (food) back to the central hub (nest) in the most efficient manner possible.
+
+- **State Space**: Normalized resource levels remaining, current target node intensities (pheromones) along paths, distance values, and normalized time remaining.
+- **Action Space**: Discrete actions to boost targeting priorities on the trails leading to the 3 resource sources, or do nothing.
+- **Rewards**: +1 for resources collected, with minor energy penalties applied when the central agent wastes computational effort assigning unnecessary routing priorities.
 
 ## 📁 Directory Structure
 - `environment/custom_env.py` - Contains the Gymnasium environment and Pygame visualizer.

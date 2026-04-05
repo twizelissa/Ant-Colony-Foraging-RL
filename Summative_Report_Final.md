@@ -2,9 +2,9 @@
 
 **Student Name:** Elissa Twizeyimana
 
-**Video:** https://www.bugufi.link/0gSh2k
+**Video:** [https://www.bugufi.link/0gSh2k](https://www.bugufi.link/0gSh2k)
 
-**Github:** https://github.com/twizelissa/Ant-Colony-Foraging-RL
+**Github:** [https://github.com/twizelissa/Ant-Colony-Foraging-RL](https://github.com/twizelissa/Ant-Colony-Foraging-RL)
 
 ---
 
